@@ -28,8 +28,8 @@ Options:
 ## Installation
 
 ```bash
-git clone https://github.com/your_username/ctfme.git
-cd ctfme
+git clone https://github.com/Durge5h/DailyTasksAutomation.git
+cd DailyTasksAutomation/ctfme
 chmod +x ctfme.sh
 ./ctfme.sh exampleCTF -l /path/to/ctf/directory
 ```
