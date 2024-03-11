@@ -33,6 +33,7 @@ cd ctfme
 chmod +x ctfme.sh
 ./ctfme.sh exampleCTF -l /path/to/ctf/directory
 ```
+> You can also create symbolic link of script so that can you can use it from anywhere in terminal if you do so make sure to change the path in scirpt i.e. `note_dir`
 
 ## Example
 
