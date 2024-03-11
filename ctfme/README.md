@@ -32,6 +32,7 @@ git clone https://github.com/your_username/ctfme.git
 cd ctfme
 chmod +x ctfme.sh
 ./ctfme.sh exampleCTF -l /path/to/ctf/directory
+```
 
 ## Example
 
