@@ -1,10 +1,12 @@
 # CTF Directory Creator
 
-![ctfme.gif](./ctfme.gif)
-
 ## Overview
 
 This script automates the process of creating directories for Capture The Flag (CTF) challenges, along with corresponding note templates. It's designed to streamline the manual process of setting up challenge directories for CTF competitions.
+
+## GIF
+
+![ctfme.gif](./ctfme.gif)
 
 ## Features
 
