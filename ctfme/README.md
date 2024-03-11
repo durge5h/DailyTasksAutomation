@@ -1,4 +1,4 @@
-# CTF Directory Creator
+# CTFME - CTF Directory Creator
 
 ## Overview
 
