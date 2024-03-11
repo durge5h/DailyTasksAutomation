@@ -25,15 +25,29 @@ Options:
   -s, --s, --show                  Print the default category list 
 ```
 
+## Installation
+
+```bash
+git clone https://github.com/your_username/ctfme.git
+cd ctfme
+chmod +x ctfme.sh
+./ctfme.sh exampleCTF -l /path/to/ctf/directory
+
 ## Example
 
 Here's an example of how to use the script:
 
 ```bash
-./ctfme.sh -l /path/to/ctf/directory -a web3 rev -r steg
+./ctfme.sh exampleCTF -l /path/to/ctf/directory -a web3 rev -r steg -n
 ```
 
-This command will create a CTF directory at the specified location (`/path/to/ctf/directory`), add the categories `web3` and `rev`, and remove the category `steg`.
+This command will create a CTF directory exampleCTF at the specified location (`/path/to/ctf/directory`), add the categories `web3` and `rev`, and remove the category `steg` and create note template within each category of challenges.
+
+```bash
+./ctfme.sh exampleCTF --default
+```
+
+This command will create a CTF directory exampleCTF at the specified location specified within script by default and furthere more you can use all swithces as well.
 
 ---
 
