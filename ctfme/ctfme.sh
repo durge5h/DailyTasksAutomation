@@ -2,7 +2,6 @@
 
 default_cate=("pwn" "web" "rev" "steg" "forensic" "osint")
 note_dir="note_template.md"
-# path =
 
 location=""
 add_cate=()
@@ -23,13 +22,6 @@ print_help() {
     printf "  -d, --d, --default               If you have manually set location\n"
     printf "  -n, --n, --note                  Creating note template\n"
     printf "  -s, --s, --show                  Print the default category list \n"
-}
-
-checking_arg(){
-    if [ $# -eq 0 ]; then
-    printf "Define arg Dumbfuck!"
-    exit 1
-    fi
 }
 
 creating_dirs(){
@@ -63,8 +55,6 @@ creating_dirs(){
     done
 }
 
-#!bash
-
 modify_category() {
     local -a cate=("${!1}")        # Initial array
     local -a add=("${!2}")         # Array of categories to add
@@ -91,8 +81,6 @@ modify_category() {
 if [[ $# -gt 0 ]]; then
     ctf_name="$1"
     shift
-else
-    print_help
 fi
 
 while [[ $# -gt 0 ]];do
@@ -148,7 +136,7 @@ if [[ -n "$ctf_name" && -n "$location" ]] || [[ -n "$ctf_name" && "$default" == 
         modfied_array=("${default_cate[@]}")
     fi
     # Call creating_dirs with the modified array
-    creating_dirs "${note:+$note}" "$ctf_name" "$location" "${default_cate[@]}"   #"
+    creating_dirs "${note:+$note}" "$ctf_name" "$location" "${default_cate[@]}"
 elif [[ -n "$show_cate" ]]; then
     printf "\n Deafault Categories: ${default_cate[*]}"
 else
