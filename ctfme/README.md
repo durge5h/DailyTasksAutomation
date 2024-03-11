@@ -12,49 +12,29 @@ This script automates the process of creating directories for Capture The Flag (
 
 ## Usage
 
-1. Clone the repository to your local machine:
+```
+Usage: ./ctfme.sh [OPTIONS]
 
-   ```bash
-   git clone https://github.com/your-username/ctf-directory-creator.git
-   ```
-
-2. Navigate to the directory where the script is located:
-
-   ```bash
-   cd ctfme
-   ```
-
-3. Make the script executable:
-
-   ```bash
-   chmod +x ctf_creator.sh
-   ```
-
-4. Run the script:
-
-   ```bash
-   ./ctf_creator.sh
-   ```
-
-5. Follow the on-screen prompts to enter the CTF name, location, and other options.
+Options:
+  -h, --h, --help                  Display this help menu
+  -l, --l <absolute/path>          Location for CTF directory
+  -a, --a, --add <categories>      Add more category/categories
+  -r, --r, --remove <categories>   Remove category/categories
+  -d, --d, --default               If you have manually set location
+  -n, --n, --note                  Creating note template
+  -s, --s, --show                  Print the default category list 
+```
 
 ## Example
 
 Here's an example of how to use the script:
 
 ```bash
-./ctf_creator.sh
+./ctfme.sh -l /path/to/ctf/directory -a web3 rev -r steg
 ```
 
-Enter the CTF name: MyCTF
-Enter the location to create the directory: /path/to/ctf/directory
-
-The script will then create the necessary directories and note templates for the challenges.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+This command will create a CTF directory at the specified location (`/path/to/ctf/directory`), add the categories `web3` and `rev`, and remove the category `steg`.
 
 ---
 
-Feel free to customize the content according to your specific project details and preferences.
+Feel free to further customize the content as needed!
