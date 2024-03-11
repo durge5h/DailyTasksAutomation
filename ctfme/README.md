@@ -43,7 +43,7 @@ Here's an example of how to use the script:
 ./ctfme.sh exampleCTF -l /path/to/ctf/directory -a web3 -r steg -n
 ```
 
-This command will create a CTF directory exampleCTF at the specified location (`/path/to/ctf/directory`), add the categories `web3` and `hardware`, and remove the category `steg` from default array list and create note template within each category of challenges.
+This command will create a CTF directory exampleCTF at the specified location (`/path/to/ctf/directory`), add the category `web3`, and remove the category `steg` from default array list and create note template within each category of challenges.
 
 ```bash
 ./ctfme.sh exampleCTF --default
