@@ -40,10 +40,10 @@ chmod +x ctfme.sh
 Here's an example of how to use the script:
 
 ```bash
-./ctfme.sh exampleCTF -l /path/to/ctf/directory -a web3 rev -r steg -n
+./ctfme.sh exampleCTF -l /path/to/ctf/directory -a web3 hardware -r steg -n
 ```
 
-This command will create a CTF directory exampleCTF at the specified location (`/path/to/ctf/directory`), add the categories `web3` and `rev`, and remove the category `steg` and create note template within each category of challenges.
+This command will create a CTF directory exampleCTF at the specified location (`/path/to/ctf/directory`), add the categories `web3` and `hardware`, and remove the category `steg` from default array list and create note template within each category of challenges.
 
 ```bash
 ./ctfme.sh exampleCTF --default
