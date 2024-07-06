@@ -43,7 +43,7 @@ def send_email(sender_email, sender_password, recipient_email, subject, body, at
     print("Email sent successfully.")
 
 def get_cv_path(job_role):
-    base_dir = '/home/example1/Documents/Resume'
+    base_dir = '/home/something/Documents/Resume'
     default_job_role = 'Pentester'
     cv_name = 'Resume.pdf'
     
@@ -76,6 +76,10 @@ def main():
     if not sender_email or not sender_password:
         print("Email or password environment variables not set.")
         return
+        
+    args.position = args.position.replace('-', ' ')
+    args.subject = args.subject.replace('-', ' ')
+    print(args.position, args.subject)
 
     # Determine the attachment path
     attachment_path = args.attachment if args.attachment else get_cv_path(args.position)
@@ -86,7 +90,7 @@ def main():
 
     # Prepare the email subject and body
     subject = args.subject.replace('[Your Position]', args.position)
-    body = 'Dear Hiring Manager,\n\nPlease find attached my CV for your consideration.\n\nBest regards,\n[Your Name]'
+    body = 'Dear Hiring Team,\n\nPlease find attached my CV for your consideration.\n\nBest regards,\n[Your Name]'
 
     # Send the email
     send_email(sender_email, sender_password, args.recipient_email, subject, body, attachment_path)
