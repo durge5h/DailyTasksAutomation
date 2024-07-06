@@ -96,7 +96,12 @@
 
 #### Ulauncher
 
-![ulauncher1.png](./ulauncher.png)
+If you wan to use script with [Ulauncher](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ulauncher.io/&ved=2ahUKEwjo16DS8pKHAxWHzjgGHW8cDyAQFnoECAcQAQ&usg=AOvVaw2PQUwvfoS-BIrBxntROWVQ) then you can use **magic.sh** file and make shortcut in ulauncher like this.
+
+![ulauncher1.png](./ulauncher1.png)
+
+> To make it work you should have have v6.0.0-beta14 i.e. Beta version as v5.15.7 has some issue with passing argument
+> You will only able to parse email and position, you can edit the Query or Script in Ulauncher and magic.sh to your need. 
 
 ## Using Google App Passwords
 
