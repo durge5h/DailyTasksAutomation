@@ -4,6 +4,10 @@
 
 `sendCv.py` is a Python script designed to facilitate sending job application emails with a CV attachment. It allows users to specify recipient email addresses, email subjects, and CV attachments directly from the command line.
 
+##GIF
+
+![banner.gif](./banner.gif)
+
 ## Why Use `sendCv.py`?
 
 - **Simplicity:** Easily send personalized job application emails with just a few command-line arguments.
@@ -52,7 +56,10 @@
    ```
    
 ### Usage
-#### Command-Line Switches:
+
+#### Command-Line
+
+##### Switches:
 
 - **`-r`, `--recipient_email`** (required)
   - The recipient's email address.
@@ -86,6 +93,10 @@
    ```sh
    python sendCv.py -r hr@example.com
    ```
+
+#### Ulauncher
+
+![ulauncher1.png](./ulauncher.png)
 
 ## Using Google App Passwords
 
