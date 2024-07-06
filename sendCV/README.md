@@ -4,7 +4,7 @@
 
 `sendCv.py` is a Python script designed to facilitate sending job application emails with a CV attachment. It allows users to specify recipient email addresses, email subjects, and CV attachments directly from the command line.
 
-##GIF
+## GIF
 
 ![banner.gif](./banner.gif)
 
