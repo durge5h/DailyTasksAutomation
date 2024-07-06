@@ -50,6 +50,42 @@
    ```sh
    ln -s /path/to/your/sendCv.py /usr/local/bin/sendCv
    ```
+   
+### Usage
+#### Command-Line Switches:
+
+- **`-r`, `--recipient_email`** (required)
+  - The recipient's email address.
+  - Example: `-r hr@example.com`
+
+- **`-s`, `--subject`** (optional)
+  - The subject of the email. If not provided, the default subject "Job Application for [Position]" is used.
+  - Example: `-s "Application for Senior Security Engineer"`
+
+- **`-a`, `--attachment`** (optional)
+  - The path to your CV file. If not provided, it defaults to the path based on the job position.
+  - Example: `-a /path/to/your/CV.pdf`
+
+- **`-p`, `--position`** (optional)
+  - The job position you are applying for. If not provided, it defaults to "Pentester".
+  - Example: `-p "Security Engineer"`
+
+#### Example Commands:
+
+1. **Send CV with all specified parameters:**
+   ```sh
+   python sendCv.py -r hr@example.com -s "Job Application for Pentester" -a "/path/to/CV.pdf" -p "Pentester"
+   ```
+
+2. **Send CV with default subject and attachment based on position:**
+   ```sh
+   python sendCv.py -r hr@example.com -p "Security Engineer"
+   ```
+
+3. **Send CV with only recipient email, using all defaults:**
+   ```sh
+   python sendCv.py -r hr@example.com
+   ```
 
 ## Using Google App Passwords
 
