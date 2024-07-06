@@ -22,8 +22,8 @@
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/sendCv.git
-   cd sendCv
+   git clone https://github.com/durge5h/DailyTasksAutomation.git
+   cd DailyTasksAutomation/sendCv
    ```
 
 2. **Install Required Packages:**
