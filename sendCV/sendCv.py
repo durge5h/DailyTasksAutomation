@@ -76,10 +76,11 @@ def main():
     if not sender_email or not sender_password:
         print("Email or password environment variables not set.")
         return
-        
-    args.position = args.position.replace('-', ' ')
-    args.subject = args.subject.replace('-', ' ')
-    print(args.position, args.subject)
+    
+    ## UCOMMENT THIS LINE OF CODES TO USE WITH U-LAUNCHER (BTW You can edit and make your way to use it)     
+    #args.position = args.position.replace('-', ' ')
+    #args.subject = args.subject.replace('-', ' ')
+    #print(args.position, args.subject)
 
     # Determine the attachment path
     attachment_path = args.attachment if args.attachment else get_cv_path(args.position)
