@@ -1,3 +1,4 @@
+
 # sendCv.py - CV Sender
 
 ## Introduction
@@ -103,16 +104,26 @@ If you wan to use script with [Ulauncher](https://www.google.com/url?sa=t&source
 > To make it work you should have have v6.0.0-beta14 i.e. Beta version as v5.15.7 has some issue with passing argument
 > You will only able to parse email and position, you can edit the Query or Script in Ulauncher and magic.sh to your need. 
 
-## Using Google App Passwords
+## Google authorization 
 
-For enhanced security, it's recommended to use Google app passwords instead of your main Google account password when using `sendCv.py`. Follow these steps to generate an app password:
+When sending emails through a Python script using Gmail, there are a few reasons why authorization might fail. Here are some common issues and solutions:
 
-1. **Generate Google App Password:**
-
-   - Go to your Google Account settings and navigate to **Security**.
-   - Under **Signing in to Google**, select **App passwords** (you may need to enable 2-step verification if not already enabled).
-   - Generate a new app password for `sendCv.py` with the scope set to **Mail**.
-   - Use this generated app password in your `.env` file instead of your main Google account password.
+1.  **Less Secure App Access**: Google blocks sign-in attempts from apps that do not meet certain security standards. If you are using your primary Google account, this might be the issue.
+    
+    **Solution**: Enable access for less secure apps. Note that Google plans to phase out this feature, so it might not be available for long.
+    
+    -   Go to your [Google Account settings](https://myaccount.google.com/).
+    -   Navigate to the "Security" tab.
+    -   Scroll down to "Less secure app access" and enable it.
+2.  **App Passwords**: If you have 2-Step Verification enabled on your Google account, you need to use an App Password instead of your regular password.
+    
+    **Solution**: Generate an App Password.
+    
+    -   Go to your [Google Account settings](https://myaccount.google.com/).
+    -   Navigate to the "Security" tab.
+    -   Under "Signing in to Google," select "App passwords."
+    -   Select the app and device you want to generate the app password for, and follow the instructions.
+    -   Use this generated password in your Python script.
 
 ## Security Concerns
 
@@ -122,4 +133,4 @@ For enhanced security, it's recommended to use Google app passwords instead of y
 By leveraging HashiCorp Vault or a similar secure vault solution, you can significantly enhance the security of your Python script (`sendCv.py`) by centralizing and securing credential management. This approach mitigates the risks associated with storing credentials in environment variables and ensures compliance with security best practices.
 
 ---
-
+<h4>Feel free to further customize the content as needed!<h4>
